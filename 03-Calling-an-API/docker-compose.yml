@@ -10,7 +10,6 @@ services:
       API_IDENTIFIER: ${AUDIENCE}
     env_file: .env
     build:
-#      context: https://github.com/${ORGANIZATION}/auth0-${BACKEND}-api-samples.git#master:01-Authorization-RS256
       context: https://github.com/${REPO}
     ports:
       - "3001:3010"
